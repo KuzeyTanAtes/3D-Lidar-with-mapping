@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/usame_aw/Desktop/tknls_ws/build/threeD_mapping",
+        "/home/usame_aw/Desktop/tknls_ws/install/threeD_mapping/lib/python3.10/site-packages",
+        "/home/usame_aw/Desktop/threeD_ws/install/velodyne_description/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/usame_aw/Desktop/tknls_ws/build/threeD_mapping",
+        "/home/usame_aw/Desktop/tknls_ws/install/threeD_mapping/lib/python3.10/site-packages",
+        "/home/usame_aw/Desktop/threeD_ws/install/velodyne_description/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
