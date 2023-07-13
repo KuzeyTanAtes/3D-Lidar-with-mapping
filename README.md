@@ -16,6 +16,7 @@
 6) Add a source statement to ur .bashrc script
 7) using nvidia settings set ur graphics card to **Performance Mode**
 8) install slam_toolbox using ```sudo apt-get install ros-humble-slam-toolbox```
+9) install pointcloud_to_laserscan ```sudo apt-get install-get ros-humble-pointcloud-to-laserscan```
 
 # Running the Demo
 After sourcing: 
