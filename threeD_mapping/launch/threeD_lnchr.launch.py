@@ -8,16 +8,12 @@ from launch.substitutions import LaunchConfiguration
 
 
 def generate_launch_description():
-    launch_file_dir = os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch')
-    spawn_turtle_dir = os.getcwd()
+
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    #x_pose = LaunchConfiguration('x_pose', default='-2.0')
-    #y_pose = LaunchConfiguration('y_pose', default='-0.5')
-
-    x_pose = LaunchConfiguration('x_pose', default='0.5')
-    y_pose = LaunchConfiguration('y_pose', default='0')
+    x_pose = LaunchConfiguration('x_pose', default='-2.0')
+    y_pose = LaunchConfiguration('y_pose', default='-0.5')
 
     #world = "/home/usame_aw/Desktop/my_worlds/my_world.world"
 
@@ -42,7 +38,7 @@ def generate_launch_description():
 
     robot_state_publisher_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(launch_file_dir, 'robot_state_publisher.launch.py')
+            '/home/usame_aw/Desktop/tknls_ws/install/threeD_mapping/share/threeD_mapping/launch/robot_state_publisher.launch.py'
         ),
         launch_arguments={'use_sim_time': use_sim_time}.items()
     )
