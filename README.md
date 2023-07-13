@@ -10,11 +10,12 @@
    c) launch files --> online_async
    d) launch files --> spawn turtlebot
 3) For the sake of convience I already ran the cmake and make commands on the 3D lidar plugin. run ```sudo mv libgazebo_ros_velodyne_laser.so /opt/ros/humble/lib/```
-4) In the tknls_ws folder run: (please don't run in the src folder)
+   Please extract the contents of the repo to the src folder. You should have the threeD_mapping pkg, a readme file, and the libgazebo plugin in the src folder.
+5) In the tknls_ws folder run: (please don't run in the src folder)
    ```colcon build --symlink-install```
-5) Add a source statement to ur .bashrc script
-6) using nvidia settings set ur graphics card to **Performance Mode**
-7) install slam_toolbox using ```sudo apt-get install ros-humble-slam-toolbox```
+6) Add a source statement to ur .bashrc script
+7) using nvidia settings set ur graphics card to **Performance Mode**
+8) install slam_toolbox using ```sudo apt-get install ros-humble-slam-toolbox```
 
 # Running the Demo
 After sourcing: 
