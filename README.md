@@ -14,6 +14,7 @@
    ```colcon build --symlink-install```
 5) Add a source statement to ur .bashrc script
 6) using nvidia settings set ur graphics card to **Performance Mode**
+7) install slam_toolbox using ```sudo apt-get install ros-humble-slam-toolbox```
 
 # Running the Demo
 After sourcing: 
