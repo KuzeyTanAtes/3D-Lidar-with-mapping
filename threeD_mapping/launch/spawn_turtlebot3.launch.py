@@ -23,7 +23,9 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     # Get the urdf file
-    urdf_path = '/home/usame_aw/Desktop/tknls_ws/src/threeD_mapping/models/usames_turtle.sdf'
+    pkg_threeD = get_package_share_directory('threeD_mapping')
+    #urdf_path = '/home/usame_aw/Desktop/tknls_ws/src/threeD_mapping/models/usames_turtle.sdf'
+    urdf_path = os.path.join(pkg_threeD, 'models', 'usames_turtle.sdf')
 
     # Launch configuration variables specific to simulation
     x_pose = LaunchConfiguration('x_pose', default='0.0')

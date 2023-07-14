@@ -9,7 +9,10 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
-    slam_params_file ='/home/usame_aw/Desktop/tknls_ws/src/threeD_mapping/config/mapper_params_online_async.yaml'
+
+    pkg_threeD = get_package_share_directory('threeD_mapping')
+    slam_params_file = os.path.join(pkg_threeD, 'config', 'mapper_params_online_async.yaml')
+    #slam_params_file ='/home/usame_aw/Desktop/tknls_ws/src/threeD_mapping/config/mapper_params_online_async.yaml'
 
     declare_use_sim_time_argument = DeclareLaunchArgument(
         'use_sim_time',

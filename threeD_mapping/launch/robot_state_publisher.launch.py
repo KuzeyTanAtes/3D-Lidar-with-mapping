@@ -32,7 +32,8 @@ def generate_launch_description():
 
     print('urdf_file_name : {}'.format(urdf_file_name))
 
-    urdf_path = "/home/usame_aw/Desktop/tknls_ws/src/threeD_mapping/models/usames_turtle.urdf"
+    pkg_threeD = get_package_share_directory('threeD_mapping')
+    urdf_path = os.path.join(pkg_threeD, 'models', 'usames_turtle.urdf')
 
     with open(urdf_path, 'r') as infp:
         robot_desc = infp.read()

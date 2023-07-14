@@ -10,12 +10,15 @@ from launch.substitutions import LaunchConfiguration
 def generate_launch_description():
 
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
+    pkg_threeD = get_package_share_directory('threeD_mapping')
+
+    rbt_st_pub_path = os.path.join(pkg_threeD, 'launch', 'robot_state_publisher.launch.py')
+    spnwr_path = os.path.join(pkg_threeD, 'launch', 'spawn_turtlebot3.launch.py')
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
     x_pose = LaunchConfiguration('x_pose', default='-2.0')
     y_pose = LaunchConfiguration('y_pose', default='-0.5')
 
-    #world = "/home/usame_aw/Desktop/my_worlds/my_world.world"
 
     world = os.path.join(
          get_package_share_directory('turtlebot3_gazebo'),
@@ -38,14 +41,14 @@ def generate_launch_description():
 
     robot_state_publisher_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            '/home/usame_aw/Desktop/tknls_ws/install/threeD_mapping/share/threeD_mapping/launch/robot_state_publisher.launch.py'
+            rbt_st_pub_path
         ),
         launch_arguments={'use_sim_time': use_sim_time}.items()
     )
 
     spawn_turtlebot_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            '/home/usame_aw/Desktop/tknls_ws/install/threeD_mapping/share/threeD_mapping/launch/spawn_turtlebot3.launch.py'
+            spnwr_path
         ),
         launch_arguments={
             'x_pose': x_pose,
