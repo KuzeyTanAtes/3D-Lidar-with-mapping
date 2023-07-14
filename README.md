@@ -23,8 +23,6 @@ After sourcing:
 the rotation script rotates usames_turtle to an **ABSOLUTE ANGLE** not a relative one.
 to run the script: ```ros2 run threeD_mapping rotate_node --ros-args -p theta:=<angle in float format>```
 
-all other stuff is optional. Possible things that can be visualized include the lidar data, the robot transformations and locations, the laserscan topic ....
-
 # To-DO
 [] ADD a NAV2 params list
 
