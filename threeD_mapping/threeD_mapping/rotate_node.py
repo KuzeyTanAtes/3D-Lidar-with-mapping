@@ -53,12 +53,14 @@ class Feedback(Node):
         theta = math.radians(self.get_parameter('theta').value)
 
         difference = current_theta[2]-theta
-        if (abs(difference) < math.radians(1)):
-             msgToSend.angular.z = 0
+        if (abs(difference) < math.radians(0.5)):
+             msgToSend.angular.z = 0.0
+             self.angularZpub.publish(msgToSend)
+             self.destroy_node()
              rclpy.shutdown()
         if (difference > math.radians(3)):
              msgToSend.angular.z = -0.3
-        elif (difference < math.radians(3)):
+        elif (difference < -math.radians(3)):
              msgToSend.angular.z = 0.3  
 
         self.angularZpub.publish(msgToSend)
