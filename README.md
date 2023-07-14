@@ -17,7 +17,7 @@
 After sourcing: 
 1) ```ros2 launch threeD_mapping threeD_lnchr.launch.py```
 2) ```ros2 run turtlebot3_teleop teleop_keyboard```
-3) ```ros2 launch threeD_mapping online_async_launch.py use_sim_time:=True```
+3) ```ros2 launch threeD_mapping map_creator.launch.py```
 
 # Visualizing current results
 At the moment there is no occ_map or costmap map being generated, however the lidar data can still be visualized using rviz
