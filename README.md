@@ -21,7 +21,7 @@ After sourcing:
 
 # Rotation script:
 the rotation script rotates usames_turtle to an **ABSOLUTE ANGLE** not a relative one.
-to run the script: ```ros2 run threeD_mapping rotate_node --ros-args -p theta:=<angle>
+to run the script: ```ros2 run threeD_mapping rotate_node --ros-args -p theta:=<angle>```
 
 all other stuff is optional. Possible things that can be visualized include the lidar data, the robot transformations and locations, the laserscan topic ....
 
