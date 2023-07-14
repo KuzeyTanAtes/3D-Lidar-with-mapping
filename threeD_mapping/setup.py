@@ -32,6 +32,8 @@ setup(
 
     entry_points={
         'console_scripts': [
+        
+        'rotate_node = threeD_mapping.rotate_node:main'
             
         ],
     },
