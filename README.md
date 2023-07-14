@@ -19,12 +19,6 @@ After sourcing:
 2) ```ros2 run turtlebot3_teleop teleop_keyboard```
 3) ```ros2 launch threeD_mapping map_creator.launch.py```
 
-# Visualizing current results
-At the moment there is no occ_map or costmap map being generated, however the lidar data can still be visualized using rviz
-run ```rviz2``` 
-The frame should be set to map.
-Click on Add by topic --> /map
-
 all other stuff is optional. Possible things that can be visualized include the lidar data, the robot transformations and locations, the laserscan topic ....
 
 # To-DO
