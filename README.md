@@ -19,7 +19,7 @@ After sourcing:
 2) ```ros2 run turtlebot3_teleop teleop_keyboard```
 3) ```ros2 launch threeD_mapping map_creator.launch.py```
 
-#Rotation script:
+# Rotation script:
 the rotation script rotates usames_turtle to an **ABSOLUTE ANGLE** not a relative one.
 to run the script: ```ros2 run threeD_mapping rotate_node --ros-args -p theta:=<angle>
 
