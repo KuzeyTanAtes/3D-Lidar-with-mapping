@@ -16,7 +16,6 @@ def generate_launch_description():
 
     pkg_threeD = get_package_share_directory('threeD_mapping')
     slam_params_file = os.path.join(pkg_threeD, 'config', 'mapper_params_online_async.yaml')
-    #slam_params_file ='/home/usame_aw/Desktop/tknls_ws/src/threeD_mapping/config/mapper_params_online_async.yaml'
     bringup_dir = get_package_share_directory('nav2_bringup')
     launch_dir = os.path.join(bringup_dir, 'launch')
 
