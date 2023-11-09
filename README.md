@@ -4,6 +4,7 @@
 # Installation Instructions and First Time Setup
 
 1) ```mkdir -p ~/Desktop/tknls_ws/src/```
+2)  clone the package and make sure the file threeD_mapping is inside the src package. Please move things outside the files that github generates by default.
 3) For the sake of convience I already ran the cmake and make commands on the 3D lidar plugin. run ```sudo mv libgazebo_ros_velodyne_laser.so /opt/ros/humble/lib/```
    Please extract the contents of the repo to the src folder. You should have the threeD_mapping pkg, a readme file, and the libgazebo plugin in the src folder.
 5) In the tknls_ws folder run: (please don't run in the src folder. run in the tknls_ws folder)
