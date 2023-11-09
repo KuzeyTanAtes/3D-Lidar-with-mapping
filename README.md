@@ -1,5 +1,5 @@
 # 3D-Lidar-with-mapping
-3D mapping using a 3D Lidar
+2D mapping using a 3D Lidar
 
 # Installation Instructions and First Time Setup
 
